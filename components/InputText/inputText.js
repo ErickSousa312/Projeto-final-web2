@@ -7,8 +7,7 @@ const InputText = (props) => {
    }
 
    return (
-      <div className={styles['campo-texto']}>
-         <label className={styles.label}>{props.label}</label>
+      <div className={styles['campo-texto'] } >
          <input
             className={styles.input}
             value={props.valor}
