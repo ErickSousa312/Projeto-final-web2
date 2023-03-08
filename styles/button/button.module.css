@@ -10,6 +10,9 @@
     margin: 32px 0;
     border: solid 1px;
     box-sizing: content-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
 

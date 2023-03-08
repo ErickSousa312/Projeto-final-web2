@@ -10,6 +10,7 @@ const InputText = (props) => {
       <div className={styles['campo-texto'] } >
          <input
             className={styles.input}
+            type={props.type}
             value={props.valor}
             onChange={Digitado}
             required={props.obrigatorio}

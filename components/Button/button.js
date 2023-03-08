@@ -2,7 +2,7 @@ import styles from '@/styles/button/button.module.css'
 
 const Button =(props)=>{
     return(
-        <button className={styles.botao} style={{width:props.width, color: props.cor, marginTop: props.margintop}}>
+        <button className={styles.botao} style={{border:props.border,backgroundColor:props.backgroundColor,boxShadow:props.shadow,width:props.width, color: props.cor, marginTop: props.margintop, padding: props.padding}}>
             {props.children}
         </button>
     )
