@@ -30,14 +30,14 @@ export default function Home() {
     <div className={styles.mainContainer}>
       <div className={styles.container}>
         <div className={styles.cadastrar}>
-          <h1>LOGO</h1>
-          <h2>Cadastrar-se</h2>
-          <h3>Ainda não possui uma <br/> conta? Cadastre-se<br/> agora mesmo!</h3>
-          <Button>Cadastrar</Button>
+          <h1 className={styles.h1Cadastro}>LOGO</h1>
+          <h2 className={styles.h2Cadastro}>Cadastrar-se</h2>
+          <h3 className={styles.h3Cadastro}>Ainda não possui uma <br/> conta? Cadastre-se<br/> agora mesmo!</h3>
+          <Button width={120}>Cadastrar</Button>
         </div>
         <form className={styles.forms}>
-          <h1>Fazer login</h1>
-          <h3>Faça login  e acompanhe todas as novidades das suas atléticas favoritas!</h3>
+          <h1>Login</h1>
+          <h3 className={styles.h3Forms}>Faça login  e acompanhe todas as novidades das suas atléticas favoritas!</h3>
           <div className={styles.inputs}>
             <InputText
               obrigatorio={true}
@@ -52,7 +52,12 @@ export default function Home() {
               Alterado={(valor) => dispath({ type: 'setSenha', payload: valor })}
             />
           </div>
-
+          <div className={styles.OU}>
+            <div className={styles.linha1}></div>
+            <h2>  OU   </h2>
+            <div className={styles.linha2}></div>
+          </div>
+          <Button margintop={"6em"} cor={"black"} width={120}>Entrar</Button>
         </form>
       </div>
     </div>

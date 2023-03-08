@@ -1,21 +1,17 @@
 .mainContainer{
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    height: 90vh;
 }
 
 .container{
     display: grid;
     grid-template-columns: 2fr 5fr;
     background-color: rgb(231, 231, 231);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     margin: 53px 15%;
+    height: 80%;
 }
 
 .cadastrar{
@@ -29,13 +25,17 @@
     border-radius: 15px 0 0 15px;
     color: aliceblue;
     text-align: center;
+    
 }
 
-.forms{
-    display: grid;
-    place-items: center;
-    background-color: rgb(231, 231, 231);;
+.forms{display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 86%;
+    box-sizing: content-box;
+    margin: 0 7%;
+    height: 35em;
 }
 
 
@@ -44,4 +44,56 @@
     place-items: center;
     width: 80%;
     box-sizing: border-box;
+}
+
+.h1Cadastro{
+
+}
+
+.h2Cadastro{
+    margin-top: 4em;
+    font-weight: 900;
+}
+.h3Cadastro{
+    margin-top: 4em;
+    text-align: justify;
+    color: rgb(128 128 128);
+    font-size: 14px;
+}
+
+.h3Forms{
+    margin-top: 5em;
+    padding: 0 3.5em;
+}
+
+.h2Forms{
+    margin-top: 1em;
+    text-align: justify;
+    padding: 0 3.5em;
+}
+
+.linha1{    width: 100%;
+    padding: 1px;
+    background-color: black;
+    border-radius: 25px;
+    height: 1px;
+    align-self: center;
+    
+    margin-right: 30px;
+}
+
+.linha2{    width: 100%;
+    padding: 1px;
+    background-color: black;
+    border-radius: 25px;
+    height: 1px;
+    align-self: center;
+    margin-left: 30px;
+    
+}
+
+.OU{
+    display:flex;
+     width:30em;
+    margin-top: 2em;
 }
