@@ -30,6 +30,18 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.barNavitaion} >
           <Button
+            marginBottom={"4px"}
+            shadow={"5px 5px 12px rgba(0,0,0,30%)"}
+            padding={"12px 19px"}
+            margintop={"3em"}
+            backgroundColor={'white'}
+            border={'none'}
+            cor={"black"}
+            width={90}>
+            Cadastrar
+          </Button>
+          <Button
+            margin={"4px 0px"}
             shadow={"5px 5px 12px rgba(0,0,0,30%)"}
             padding={"12px 19px"}
             margintop={"1em"}
@@ -40,16 +52,7 @@ export default function Home() {
             Cadastrar
           </Button>
           <Button
-            shadow={"5px 5px 12px rgba(0,0,0,30%)"}
-            padding={"12px 19px"}
-            margintop={"1em"}
-            backgroundColor={'white'}
-            border={'none'}
-            cor={"black"}
-            width={90}>
-            Cadastrar
-          </Button>
-          <Button
+            margin={"4px 0px"}
             shadow={"5px 5px 12px rgba(0,0,0,30%)"}
             padding={"12px 19px"}
             margintop={"1em"}

@@ -15,13 +15,17 @@
     margin-top: 2em;
 }
 .barNavitaion{
-    width: 25%;
-    background-color: #dee1f3;
-    height: 100%;
+    display: flex;
+    width: 15%;
+    background-color: #fdfeff;
+    height: 96.5vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .areaData{
-    width: 75%;
-    background-color: #7e7f86;
-    height: 100%;
+    background-color: #c9c9c9;
+    width: 85%;
+    height: 96.5vh;
 }

@@ -13,7 +13,8 @@ const Button = (props) => {
                 marginTop: props.margintop,
                 padding: props.padding,
                 margin:props.margin,
-                position: props.position
+                position: props.position,
+                marginBottom: props.marginBottom
             }}>
             {props.children}
         </button>
