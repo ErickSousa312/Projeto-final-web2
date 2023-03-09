@@ -16,8 +16,12 @@
 }
 .barNavitaion{
     width: 25%;
+    background-color: #dee1f3;
+    height: 100%;
 }
 
 .areaData{
     width: 75%;
+    background-color: #7e7f86;
+    height: 100%;
 }
