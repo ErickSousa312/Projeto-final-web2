@@ -2,11 +2,12 @@
 
 .navbar {
   display: flex;
-  background-color: #6278f7;
-  padding: 20px 0;
-  justify-content: center;
-  align-content: center;
+  background-color: #dee1f3;
+  align-items: center;
   width: 100%;
+  position: absolute;
+    top: 0;
+    box-shadow: 5px 5px 12px rgb(0 0 0 / 30%);
 }
 
 .navbar a {
@@ -17,7 +18,6 @@
   
 }
 .navbar div {
-  width: 70%;
   
 }
 .navbar div h1{
@@ -34,4 +34,19 @@
 
 .navbar a:hover {
   color: #bbff00;
+}
+
+
+.navbarLOGO{
+  display: flex;
+  font-weight: 900;
+  font-size: 20px;
+  width: 25%;
+  padding-left: 0px;
+  justify-content: center;
+}
+.navbarIcons{
+  display: flex;
+  width: 75%;
+  justify-content: center;
 }

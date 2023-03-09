@@ -1,0 +1,23 @@
+.mainContainer{
+    background-color: rgb(255, 255, 255);
+    height: 82vh;
+    display: contents;display: contents;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(27, 26, 26);
+    align-items: center;
+    box-shadow: 10px 10px 16px rgb(0 0 0 / 30%);
+    height: 95.4%;
+    width: 100%;
+    margin-top: 2em;
+}
+.barNavitaion{
+    width: 25%;
+}
+
+.areaData{
+    width: 75%;
+}

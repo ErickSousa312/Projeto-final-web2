@@ -39,7 +39,7 @@ export default function Home() {
           <Button width={120}>Cadastrar</Button>
         </div>
         <form className={styles.forms}>
-          <h1 style={{ fontSize: "43px" }}>Login</h1>
+          <h1 style={{fontWeight: "900", fontSize: "43px" }}>Login</h1>
           <h3 className={styles.h3Forms}>Faça login e acompanhe todas as novidades<br /> das suas atléticas favoritas!</h3>
           <div className={styles.inputs}>
             <HiOutlineMail size={25} className={styles.iconEmail} />
