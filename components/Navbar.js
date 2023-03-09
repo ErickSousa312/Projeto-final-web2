@@ -2,9 +2,9 @@ import { HiHome, HiBell,HiCalendar } from "react-icons/hi";
 import Button from '@/components/Button/button'
 import styles from '../styles/Navbar.module.css'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <ul className={styles.navbar}>
+    <ul className={styles.navbar} style={{zIndex: props.zIndex}}>
       <div className={styles.navbarLOGO}>LOGO</div>
       <div className={styles.navbarIcons}>
           <Button

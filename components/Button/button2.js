@@ -1,11 +1,11 @@
-import styles from '@/styles/button/button.module.css'
+import styles from '@/styles/button/button2.module.css'
 import { useEffect, useState } from 'react'
 
-const Button = (props) => {
+const Button2 = (props) => {
     const estilo = props.className || styles.botao
     return (
         <button
-            className={estilo}
+            className={styles.botao2}
             style={{
                 border: props.border,
                 backgroundColor: props.backgroundColor,
@@ -16,10 +16,12 @@ const Button = (props) => {
                 padding: props.padding,
                 margin:props.margin,
                 position: props.position,
-                marginBottom: props.marginBottom
+                marginBottom: props.marginBottom,
+                marginLeft: props.marginLeft,
+                marginRight: props.marginRight
             }}>
             {props.children}
         </button>
     )
 }
-export default Button
+export default Button2
