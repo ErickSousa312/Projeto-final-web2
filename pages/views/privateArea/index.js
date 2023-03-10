@@ -37,6 +37,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.barNavitaion} >
           <Button2
+          fontSize={"12px"}s
             marginBottom={"4px"}
             shadow={"5px 5px 12px rgba(0,0,0,30%)"}
             padding={"12px 19px"}
@@ -45,24 +46,111 @@ export default function Home() {
             border={'none'}
             cor={"black"}
             width={"89%"}>
-            <CgProfile className={styles.iconGoogle} size={25}></CgProfile>
+            <CgProfile className={styles.iconGoogle} size={20}></CgProfile>
             Sua conta
           </Button2>
           
           <Button2
+            fontSize={"12px"}
             margin={"4px 0px"}
             shadow={"5px 5px 12px rgba(0,0,0,30%)"}
-            padding={"12px 11px"}
+            padding={"10px 14px"}
             margintop={"1em"}
             backgroundColor={'white'}
             border={'none'}
             cor={"black"}
             width={"89%"}>
-              <CgReadme className={styles.iconGoogle} size={25}></CgReadme>
-            Gerenciar Menbros
+              <CgReadme className={styles.iconGoogle} size={22}></CgReadme>
+            Gerir Menbros
           </Button2>
         </div>
-        <div className={styles.areaData}> </div>
+        <div className={styles.areaData}> 
+        <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa euismod magna gravida laoreet.
+      Nullam imperdiet purus vel mi blandit sollicitudin. Donec ut quam vel purus lobortis tempor. Suspendisse potenti.
+      In hac habitasse platea dictumst. Duis gravida dictum purus, id mollis est finibus eu. Morbi ut semper eros.
+    </p>
+
+    <p>
+      Phasellus finibus urna at quam venenatis efficitur. Nulla facilisi. Nullam in lectus ante. Nulla vitae elit vel
+      lectus dignissim ultricies eget vitae turpis. Vestibulum commodo volutpat venenatis. Nam vel elit purus. Sed
+      fringilla lorem eu mauris ultricies, a malesuada neque ultricies. Praesent pharetra dapibus dolor, in viverra
+      sapien bibendum ac.
+    </p>
+
+    <p>
+      Mauris vel ultrices velit. In hac habitasse platea dictumst. Etiam ut eros non nulla ullamcorper feugiat eu eu
+      neque. Aenean ac nisl velit. Aliquam erat volutpat. Aenean vel elit at elit ornare molestie. Maecenas tincidunt
+      justo vel urna facilisis ultrices. Nulla ac nulla velit. Nulla facilisi.
+    </p>
+
+    <p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p>
+    <p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p><p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p><p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p><p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p><p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p><p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p><p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p>
+    <p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p>
+    <p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p>
+    <p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p>
+    <p>
+      Pellentesque suscipit ipsum id lectus vestibulum faucibus. Sed ut finibus quam. Curabitur feugiat lobortis
+      dolor, ut pharetra mauris rutrum ut. Nulla facilisi. Fusce congue iaculis lorem id suscipit. Suspendisse suscipit
+      consectetur urna, ac aliquam nunc rutrum eu. Fusce non diam non nunc auctor accumsan. Suspendisse porta, felis
+      sit amet malesuada iaculis, mauris lorem tempor magna, non ultricies leo dolor non mauris.
+    </p>
+    </div>
       </div>
     </div>
 

@@ -18,7 +18,8 @@ const Button2 = (props) => {
                 position: props.position,
                 marginBottom: props.marginBottom,
                 marginLeft: props.marginLeft,
-                marginRight: props.marginRight
+                marginRight: props.marginRight,
+                fontSize: props.fontSize
             }}>
             {props.children}
         </button>
