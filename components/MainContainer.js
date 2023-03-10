@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Head from 'next/head'
 import styles from '../styles/MainContainer.module.css'
+import { SessionProvider } from "next-auth/react";
 
 export default function MainView({ children }) {
   return (
@@ -15,7 +16,9 @@ export default function MainView({ children }) {
           "
         ></meta>
       </Head>
+      <SessionProvider>
       <div className={styles.container}>{children}</div>
+      </SessionProvider>
     </>
   )
 }

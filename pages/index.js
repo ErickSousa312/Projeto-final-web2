@@ -9,6 +9,8 @@ import { MdHistory, MdArrowForwardIos } from 'react-icons/md';
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineMail, HiLockClosed } from "react-icons/hi";
 import Button from '@/components/Button/button'
+import { signIn, signOut, useSession } from "next-auth/react";
+
 
 function reducer(dadosLogin, action) {
   switch (action.type) {
@@ -21,12 +23,22 @@ function reducer(dadosLogin, action) {
       throw new Error('Tipo de ação desconhecido.');
   }
 }
-export default function Home() {
 
+export default function Home() {
+  const { data: session } = useSession()
+  
   const [dadosLogin, dispath] = useReducer(reducer, {
     email: "",
     senha: ""
   });
+
+  if (!session) {
+    return (
+      <div>
+        <button onClick={() => signIn("google")}>Entrar com o Google</button>
+      </div>
+    );
+  }
 
 
   return (

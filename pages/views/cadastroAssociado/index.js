@@ -51,7 +51,7 @@ export default function Home() {
             <CgProfile size={25} className={styles.iconEmail} />
             <InputText
               obrigatorio={true}
-              placeholder="Nome do Presidente"
+              placeholder="Nome de usuário"
               valor={dadosLogin.senha}
               Alterado={(valor) => dispath({ type: 'setSenha', payload: valor })}
             />
