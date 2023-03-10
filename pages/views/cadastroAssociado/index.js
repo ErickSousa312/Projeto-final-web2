@@ -95,7 +95,7 @@ export default function Home() {
             backgroundColor={'white'}
             border={'none'}
             margintop={"2em"}
-            adding={"10px 20px"}
+            padding={"10px 20px"}
             cor={"black"}
             className={styles.loginGoogle}>
             <FcGoogle className={styles.iconGoogle} size={27}></FcGoogle> Entar com o google

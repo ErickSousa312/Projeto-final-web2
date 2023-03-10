@@ -5,7 +5,7 @@ const Button = (props) => {
     const estilo = props.className || styles.botao
     return (
         <button
-            className={estilo}
+            className={styles.botao}
             style={{
                 border: props.border,
                 backgroundColor: props.backgroundColor,
