@@ -39,7 +39,6 @@ export default function Home() {
           <Button2
           fontSize={"12px"}s
             marginBottom={"4px"}
-            shadow={"5px 5px 12px rgba(0,0,0,30%)"}
             padding={"12px 19px"}
             margintop={"3em"}
             backgroundColor={'white'}
@@ -53,7 +52,6 @@ export default function Home() {
           <Button2
             fontSize={"12px"}
             margin={"4px 0px"}
-            shadow={"5px 5px 12px rgba(0,0,0,30%)"}
             padding={"10px 14px"}
             margintop={"1em"}
             backgroundColor={'white'}
