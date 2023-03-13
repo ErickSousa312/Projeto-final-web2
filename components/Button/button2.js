@@ -12,14 +12,13 @@ const Button2 = (props) => {
                 boxShadow: props.shadow,
                 width: props.width,
                 color: props.cor,
-                marginTop: props.margintop,
                 padding: props.padding,
-                margin:props.margin,
                 position: props.position,
                 marginBottom: props.marginBottom,
                 marginLeft: props.marginLeft,
                 marginRight: props.marginRight,
-                fontSize: props.fontSize
+                fontSize: props.fontSize,
+                marginTop: props.marginTop
             }}>
             {props.children}
         </button>

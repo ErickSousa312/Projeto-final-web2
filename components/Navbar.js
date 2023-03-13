@@ -8,30 +8,24 @@ export default function Navbar(props) {
       <div className={styles.navbarLOGO}>LOGO</div>
       <div className={styles.navbarIcons}>
           <Button
-            position={"relative"}
             border={'0px'}
-            margin={"0px"}
-            margintop={"0em"}
+            margin2={"0px"}
             padding={"0px 10px"}
             cor={"black"}
             className={styles.loginGoogle}>
             <HiHome className={styles.iconGoogle} size={25}></HiHome> 
           </Button>
         <Button
-            position={"relative"}
             border={'none'}
-            margin={"0px"}
-            margintop={"0em"}
+            margin2={"0px"}
             padding={"0px 10px"}
             cor={"black"}
             className={styles.loginGoogle}>
             <HiBell className={styles.iconGoogle} size={25}></HiBell> 
           </Button>
           <Button
-            position={"relative"}
             border={"none"}
-            margin={"0px"}
-            margintop={"0em"}
+            margin2={"0px"}
             padding={"5px 10px"}
             cor={"black"}
             className={styles.loginGoogle}>

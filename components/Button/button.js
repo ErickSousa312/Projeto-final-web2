@@ -14,9 +14,9 @@ const Button = (props) => {
                 color: props.cor,
                 marginTop: props.margintop,
                 padding: props.padding,
-                margin:props.margin,
                 position: props.position,
-                marginBottom: props.marginBottom
+                marginBottom: props.marginBottom,
+                margin: props.margin2
             }}>
             {props.children}
         </button>

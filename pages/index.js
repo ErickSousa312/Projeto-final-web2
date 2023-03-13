@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useReducer, useState } from 'react'
+import { useReducer, useState, useEffect} from 'react'
 import { set } from 'mongoose'
 import Form from '@/components/Form/form'
 import Category from '@/components/Category/category'
@@ -9,9 +9,29 @@ import { MdHistory, MdArrowForwardIos } from 'react-icons/md';
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineMail, HiLockClosed } from "react-icons/hi";
 import Button from '@/components/Button/button'
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signIn, signOut, useSession,getSession } from "next-auth/react";
+import Btn from '@/components/Button/login-btn'
+import { useRouter } from "next/router";
 
 
+async function redirectElseSignedIn() {
+  const session = await getSession();
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/views/privateArea2',
+        permanent: true,
+      },
+    }
+  }else{
+    return {
+      redirect: {
+        destination: '/a',
+        permanent: true,
+      },
+    }
+  }
+}
 function reducer(dadosLogin, action) {
   switch (action.type) {
     case 'setEmail':
@@ -25,20 +45,25 @@ function reducer(dadosLogin, action) {
 }
 
 export default function Home() {
-  const { data: session } = useSession()
+  const router = useRouter();
+  const { data: session, status } = useSession();
   
   const [dadosLogin, dispath] = useReducer(reducer, {
     email: "",
     senha: ""
   });
 
-  if (!session) {
-    return (
-      <div>
-        <button onClick={() => signIn("google")}>Entrar com o Google</button>
-      </div>
-    );
+  async function verify(){
+    if(status=='authenticated'){
+      router.replace("/views/privateArea2")
+    }
   }
+
+  useEffect(()=>{
+    console.log(status)
+    verify()
+  })
+
 
 
   return (
@@ -83,20 +108,19 @@ export default function Home() {
             <h2>OU</h2>
             <div className={styles.linha2}></div>
           </div>
-          <Button
-            shadow={"5px 5px 12px rgba(0,0,0,30%)"}
+          
+        <Btn 
+        shadow={"5px 5px 12px rgba(0,0,0,30%)"}
             backgroundColor={'white'}
             border={'none'}
             margintop={"2em"}
             adding={"10px 20px"}
-            cor={"black"}
-            className={styles.loginGoogle}>
+            cor={"black"}>
             <FcGoogle className={styles.iconGoogle} size={27}></FcGoogle> Entar com o google
-          </Button>
+        </Btn>
         </form>
       </div>
     </div>
 
   )
 }
-
