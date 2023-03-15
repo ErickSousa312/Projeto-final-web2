@@ -1,8 +1,17 @@
 import styles from '@/styles/inputText/inputText.module.css'
-const InputText = (props) => {
 
-   
-   const Digitado = (evento) => {
+type InputText2 = {
+   type?: string,
+   valor: string,
+   Alterado:(valor:string)=>void,
+   obrigatorio?: boolean,
+   placeholder?: string
+}
+
+
+const InputText = (props: InputText2) => {
+
+   const Digitado = (evento:React.ChangeEvent<HTMLInputElement>) => {
       props.Alterado(evento.target.value)
    }
 

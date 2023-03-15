@@ -1,6 +1,6 @@
 import style from '@/styles/form/form.module.css'
 import { useReducer, useState } from 'react'
-import Dropdown from '../Dropdown/dropdown';
+import Dropdown from '../Dropdown/dropdown.ts';
 import InputText from '../InputText/inputText';
 import Button from '@/components/Button/button'
 

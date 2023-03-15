@@ -32,7 +32,18 @@ async function redirectElseSignedIn() {
     }
   }
 }
-function reducer(dadosLogin, action) {
+
+interface DadosLogin{
+  email:string,
+  senha:string
+}
+
+type Action = {
+  type: string,
+  payload: string
+}
+
+function reducer(dadosLogin:DadosLogin, action:Action) {
   switch (action.type) {
     case 'setEmail':
       console.log(dadosLogin)
@@ -114,7 +125,7 @@ export default function Home() {
             backgroundColor={'white'}
             border={'none'}
             margintop={"2em"}
-            adding={"10px 20px"}
+            padding={"10px 20px"}
             cor={"black"}>
             <FcGoogle className={styles.iconGoogle} size={27}></FcGoogle> Entar com o google
         </Btn>

@@ -4,7 +4,12 @@ import Head from 'next/head'
 import styles from '../styles/MainContainer.module.css'
 import { SessionProvider } from "next-auth/react";
 
-export default function MainView({ children }) {
+interface MainViewProps {
+  children: React.ReactNode;
+  session:string
+}
+
+export default function MainView({ children }:MainViewProps) {
   return (
     <>
       <Head>

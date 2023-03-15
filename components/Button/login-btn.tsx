@@ -5,7 +5,20 @@ import { Children, useEffect } from "react";
 import styles from '@/styles/button/button.module.css'
 
 
-export default function Btn(props) {
+type BtnProps = {
+  border?: string;
+  backgroundColor?: string;
+  shadow?: string;
+  width?: string;
+  cor?: string;
+  margintop?: string;
+  padding?: string;
+  position?: string;
+  marginBottom?: string;
+  margin2?: string;
+  children: React.ReactNode;
+}
+export default function Btn(props:BtnProps) {
   const router = useRouter();
   const { data: session } = useSession();
 
@@ -26,7 +39,6 @@ export default function Btn(props) {
           color: props.cor,
           marginTop: props.margintop,
           padding: props.padding,
-          position: props.position,
           marginBottom: props.marginBottom,
           margin: props.margin2
         }}

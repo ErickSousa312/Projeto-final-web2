@@ -3,8 +3,15 @@ import { motion } from "framer-motion";
 import MainContainer from '../components/MainContainer'
 import { useRouter } from "next/router";
 
+import type { AppProps } from 'next/app'
 
- function App({ Component, children , session}) {
+interface AppProps2 {
+  Component: React.ElementType;
+  children: React.ReactNode;
+  session?: any;
+}
+
+ function App({ Component, children , session}:AppProps2):JSX.Element {
   const router = useRouter();
   return ( 
     <motion.div 
@@ -14,7 +21,7 @@ import { useRouter } from "next/router";
     exit={{ opacity: 0 }}
     >
   <MainContainer session={session}>
-    <Component{...children}/>  
+    <Component>{children}</Component>
   </MainContainer>
   </motion.div>
   )

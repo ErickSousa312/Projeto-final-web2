@@ -1,7 +1,22 @@
 import styles from '@/styles/button/button.module.css'
 import { useEffect, useState } from 'react'
 
-const Button = (props) => {
+type Button={
+    border?: string;
+    backgroundColor?: string;
+    shadow?: string;
+    width?: number;
+    cor?: string;
+    margintop?: string;
+    padding?: string;
+    position?: string;
+    marginBottom?: string;
+    margin2?: string;
+    children: React.ReactNode;
+    className?: string;
+}
+
+const Button = (props: Button) => {
     const estilo = props.className || styles.botao
     return (
         <button
@@ -14,7 +29,6 @@ const Button = (props) => {
                 color: props.cor,
                 marginTop: props.margintop,
                 padding: props.padding,
-                position: props.position,
                 marginBottom: props.marginBottom,
                 margin: props.margin2
             }}>
