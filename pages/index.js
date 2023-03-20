@@ -115,7 +115,8 @@ export default function Home() {
             border={'none'}
             margintop={"2em"}
             adding={"10px 20px"}
-            cor={"black"}>
+            cor={"black"}
+            servidor={"github"}>
             <FcGoogle className={styles.iconGoogle} size={27}></FcGoogle> Entar com o google
         </Btn>
         </form>

@@ -11,7 +11,7 @@ export default function Btn(props) {
 
   async function login(){
     console.log("oi")
-    signIn("google")
+    signIn(props.servidor)
     router.replace("/views/privateArea2")
   }
 
